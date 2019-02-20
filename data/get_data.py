@@ -28,4 +28,6 @@ df.columns=[        'Open_time',
                     'Taker_buy_base_asset_volume',
                     'Taker_buy_quote_asset_volume',
                     'Ignore']
-print(df)
+
+df.to_csv(path_or_buf = 'datafile.csv')
+print(type(df))
